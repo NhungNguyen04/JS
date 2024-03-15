@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h4> Object groups multiple values together</h4>
+    <h4>null vs undefined 
+        null = intentionally want something to be empty
+    </h4>
+    <h4>Auto-boxing</h4>
+    <p>- JS automatically wraps the string, numbers, boolean in an object like a box.</p>
+    <p>- This feature does not work with 'null' and 'undefined'</p>
+    <p>- Objects are references, when we assign an object to another, we also assign its address</p>       
+        - We can't compare objects directly, when we compare them, we actually compare the references
+    </p>
+    <h4>Destructuring object: an easier way to take properties out of an object</h4>
+    <script type="text/javascript">
+        // const product = {
+        //     name: 'tshirt',
+        //     'delivery-time': '1 day',
+        //     rating: {
+        //         stars: 4.5,
+        //         count: 87
+        //     },
+        //     fun: function function1() {
+        //         console.log('function inside object');
+        //     }
+        // };
+        // console.log(product);
+        // console.log(product.name);
+        // console.log(product['name']);
+        // console.log(product['delivery-time']);
+
+        // console.log(product.rating.count);
+        // product.fun();
+        
+        // console.log(typeof console.log); -->
+
+        console.log('hello'.length);
+        console.log('hello'.toUpperCase());
+
+        const ob1 = {
+            message: 'hello'
+        }
+
+        const ob2 = ob1;
+
+        ob1.message = 'Good job!';
+        console.log(ob1);
+        console.log(ob2);
+
+        console.log(ob2 === ob1);
+
+        const ob3 = {
+            message: 'Bye'
+        };
+
+        const { message } = ob3;
+        console.log(message);
+
+    </script>
+</body>
+</html>

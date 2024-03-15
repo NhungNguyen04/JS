@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h3>DOM: The document object models(represents) the webpage</h3>
+    <h3>DOM combines HTML and JS together, it gives JS full control of the webpage</h3>
+    <p>Every HTML element has innerHTML property</p>
+    <p>HTML elements are JavaScript object</p>
+    <p>p is a box element, it always take up the whole line</p>
+    <button class="btn1">hello</button>
+    <button class="btn2">bye</button>
+    <script type="text/javascript">
+        console.log(document.querySelector('body'));
+        document.querySelector('.btn1').innerHTML = 'good job!';
+        // console.log(document.title);
+        // console.log(document.body);
+
+        // console.log(document.body.innerHTML = '<button>Click me</button>');
+        //document.body.innerHTML = 'hello';
+        // document.title = 'Good job!';
+    </script>
+</body>
+</html>
